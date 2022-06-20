@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@400&display=swap");
+// boje
+$colors: (
+  "greeny": rgb(201, 205, 143),
+  "browny": #332f34,
+  "yellowish": #f8da92,
+  "lightBrowny": #715c42,
+);
+$velicine: (
+  "velikiNaslov": 48px,
+  "srednjiNaslov": 40px,
+  "maliNaslov": 32px,
+);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: map-get($colors, browny);
+  font-family: "K2D", sans-serif;
+}
+// navbar
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28201, 205, 143, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler {
+  border: 3px solid rgb(201, 205, 143);
+}
+.navigacioni-link {
+  color: rgb(201, 205, 143) !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-right: 120px;
+}
+// crta
+.crta {
+  height: 3px !important;
+  width: 76%;
+  margin: 2rem auto;
+  color: rgb(201, 205, 143);
+}
+// kviz
+section.kviz {
+  h5 {
+    font-size: map-get($velicine, srednjiNaslov);
+    color: map-get($colors, greeny);
+  }
+}
+.okvir {
+  color: map-get($colors, yellowish);
+  font-size: map-get($velicine, maliNaslov);
+  border: 3px solid map-get($colors, greeny);
+  border-radius: 10px;
+  width: 60%;
+  padding: 1.25rem;
+  display: none;
+  animation-name: okvirKviz;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  input[type="radio"] {
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    transform: scale(1.3);
+  }
+  .btnQuiz {
+    font-size: 1rem;
+  }
+}
+.btnQuiz {
+  margin-top: 1rem;
+  background-color: #c9cd8f;
+  color: #332f34;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 1rem 4rem !important;
+}
+
+.rezultati {
+  color: map-get($colors, greeny);
+}
+// footer
+footer {
+  background-color: map-get($colors, yellowish);
+  h6,
+  a {
+    text-decoration: none;
+    font-size: map-get($velicine, maliNaslov);
+    color: map-get($colors, browny);
+    padding-top: map-get($velicine, maliNaslov);
+  }
+  .kvizz {
+    margin-bottom: 32px;
+  }
+}
+.copy-right {
+  p {
+    // background-color: map-get($colors,browny);
+    text-align: center;
+    color: map-get($colors, greeny);
+    font-size: map-get($velicine, maliNaslov);
+    padding: 20px;
+  }
+}
+@media (max-width: 1695px) {
+  .navigacioni-link {
+    margin-right: 75px;
+  }
+}
+@media (max-width: 1421px) {
+  .navigacioni-link {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1061px) {
+  .navigacioni-link {
+    margin-right: 5px;
+  }
+}

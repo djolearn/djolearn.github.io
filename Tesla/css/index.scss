@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@400&display=swap");
+// boje
+$colors: (
+  "greeny": rgb(201, 205, 143),
+  "browny": #332f34,
+  "yellowish": #f8da92,
+);
+$velicine: (
+  "velikiNaslov": 48px,
+  "srednjiNaslov": 40px,
+  "maliNaslov": 32px,
+);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: map-get($colors, browny);
+  font-family: "K2D", sans-serif;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28201, 205, 143, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler {
+  border: 3px solid rgb(201, 205, 143);
+}
+.navigacioni-link {
+  color: rgb(201, 205, 143) !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-right: 120px;
+}
+// crta
+.crta {
+  height: 3px !important;
+  width: 76%;
+  margin: 2rem auto;
+  color: rgb(201, 205, 143);
+}
+//slika
+.slika {
+  height: 703px;
+  width: 487px;
+  margin-top: 70px;
+}
+.svet {
+  color: #fff;
+  font-size: map-get($velicine, srednjiNaslov);
+  margin-top: 109px;
+  margin-bottom: 109px;
+}
+.poruke {
+  color: #f8da92;
+  border: 1px solid #f8da92;
+  padding: 20px;
+  h5 {
+    color: #f8da92;
+    font-size: map-get($velicine, velikiNaslov);
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+  p {
+    font-size: map-get($velicine, srednjiNaslov);
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+.two {
+  .muzej h5 {
+    font-size: map-get($velicine, velikiNaslov);
+    color: map-get($colors, greeny);
+    margin-bottom: 74px;
+    margin-top: 74px;
+  }
+  .muzej p {
+    color: map-get($colors, greeny);
+    font-size: map-get($velicine, velikiNaslov);
+    // margin-top: 15rem;
+    text-align: initial;
+  }
+}
+.three {
+  .tryQuiz {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 256px;
+    margin-bottom: 256px;
+    gap: 4rem;
+    p {
+      font-size: map-get($velicine, velikiNaslov);
+      color: map-get($colors, yellowish);
+    }
+    a {
+      margin-left: 3rem;
+      margin-bottom: -1rem !important;
+      background-color: map-get($colors, greeny);
+      color: map-get($colors, browny);
+      font-size: map-get($velicine, srednjiNaslov);
+      border-radius: 15px;
+      padding: 0 150px !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      p {
+        margin-top: 1rem;
+        color: map-get($colors, browny);
+      }
+    }
+  }
+}
+footer {
+  background-color: map-get($colors, yellowish);
+  h6,
+  a {
+    text-decoration: none;
+    font-size: map-get($velicine, maliNaslov);
+    color: map-get($colors, browny);
+    padding-top: map-get($velicine, maliNaslov);
+  }
+  .kvizz {
+    margin-bottom: 32px;
+  }
+}
+.copy-right {
+  p {
+    // background-color: map-get($colors,browny);
+    text-align: center;
+    color: map-get($colors, greeny);
+    font-size: map-get($velicine, maliNaslov);
+    padding: 20px;
+  }
+}
+@media (max-width: 1695px) {
+  .navigacioni-link {
+    margin-right: 75px;
+  }
+}
+@media (max-width: 1421px) {
+  .navigacioni-link {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1061px) {
+  .navigacioni-link {
+    margin-right: 5px;
+  }
+  .two {
+    .muzej h5 {
+      font-size: map-get($velicine, velikiNaslov);
+      color: map-get($colors, greeny);
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    .muzej p {
+      color: map-get($colors, greeny);
+      font-size: map-get($velicine, velikiNaslov);
+      // margin-top: 15rem;
+      text-align: initial;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .three {
+    .tryQuiz {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      gap: 4rem;
+      justify-content: center;
+      p {
+        font-size: map-get($velicine, velikiNaslov);
+        color: map-get($colors, yellowish);
+        text-align: center;
+      }
+      button {
+        margin: auto;
+        background-color: map-get($colors, greeny);
+        color: map-get($colors, browny);
+        font-size: map-get($velicine, srednjiNaslov);
+        border-radius: 15px;
+        padding: 0 150px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

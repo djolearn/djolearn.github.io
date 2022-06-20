@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@400&display=swap");
+// boje
+$colors: (
+  "greeny": rgb(201, 205, 143),
+  "browny": #332f34,
+  "yellowish": #f8da92,
+  "lightBrowny": #715c42,
+);
+$velicine: (
+  "velikiNaslov": 48px,
+  "srednjiNaslov": 40px,
+  "maliNaslov": 32px,
+);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: map-get($colors, browny);
+  font-family: "K2D", sans-serif;
+}
+// navbar
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28201, 205, 143, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler {
+  border: 3px solid rgb(201, 205, 143);
+}
+.navigacioni-link {
+  color: rgb(201, 205, 143) !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-right: 120px;
+}
+// crta
+.crta {
+  height: 3px !important;
+  width: 76%;
+  margin: 2rem auto;
+  color: rgb(201, 205, 143);
+}
+#jedan {
+  h6 {
+    color: map-get($colors, yellowish);
+    font-size: map-get($velicine, velikiNaslov);
+    text-align: center;
+  }
+  .okvir .opis-kluba {
+    border: 3px solid map-get($colors, lightBrowny);
+    width: 90%;
+    margin: 20px auto 120px auto;
+    border-radius: 20px;
+    p {
+      font-size: map-get($velicine, maliNaslov);
+      color: map-get($colors, yellowish);
+      padding: 102px 22px;
+    }
+  }
+}
+.dva {
+  .pozadina-ikonice {
+    background: linear-gradient(#715c42, #f5c657);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    .ikonice {
+      font-size: 53px;
+      color: map-get($colors, yellowish) !important;
+      padding: map-get($velicine, maliNaslov);
+    }
+  }
+  p {
+    display: inline-block;
+    color: map-get($colors, yellowish);
+    font-size: map-get($velicine, maliNaslov);
+    margin-left: 15px;
+  }
+  .paragraf-levo {
+    margin-left: 30px;
+  }
+}
+// footer
+footer {
+  background-color: map-get($colors, yellowish);
+  h6,
+  a {
+    text-decoration: none;
+    font-size: map-get($velicine, maliNaslov);
+    color: map-get($colors, browny);
+    padding-top: map-get($velicine, maliNaslov);
+  }
+  .kvizz {
+    margin-bottom: 32px;
+  }
+}
+.copy-right {
+  p {
+    // background-color: map-get($colors,browny);
+    text-align: center;
+    color: map-get($colors, greeny);
+    font-size: map-get($velicine, maliNaslov);
+    padding: 20px;
+  }
+}
+@media (max-width: 1695px) {
+  .navigacioni-link {
+    margin-right: 75px;
+  }
+}
+@media (max-width: 1421px) {
+  .navigacioni-link {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1061px) {
+  .navigacioni-link {
+    margin-right: 5px;
+  }
+}
