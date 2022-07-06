@@ -177,14 +177,34 @@ footer {
         color: map-get($colors, yellowish);
         text-align: center;
       }
-      button {
-        margin: auto;
+      a {
+        margin-left: 0rem;
+        margin-bottom: -1rem !important;
         background-color: map-get($colors, greeny);
         color: map-get($colors, browny);
         font-size: map-get($velicine, srednjiNaslov);
         border-radius: 15px;
-        padding: 0 150px;
+        padding: 0 150px !important;
         text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .tryQuiz {
+    a {
+      p {
+        margin-left: -2rem;
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .tryQuiz {
+    a {
+      p {
+        margin-left: -3rem;
       }
     }
   }

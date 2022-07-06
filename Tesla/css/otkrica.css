@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,11 +19,11 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-  border: 3px solid #c9cd8f;
+  border: 3px solid rgb(201, 205, 143);
 }
 
 .navigacioni-link {
-  color: #c9cd8f !important;
+  color: rgb(201, 205, 143) !important;
   font-size: 2rem;
   text-transform: uppercase;
   margin-right: 120px;
@@ -34,7 +33,7 @@ body {
   height: 3px !important;
   width: 76%;
   margin: 2rem auto;
-  color: #c9cd8f;
+  color: rgb(201, 205, 143);
 }
 
 .otkrica .naslov {
@@ -42,13 +41,11 @@ body {
   font-size: 48px;
   text-align: center;
 }
-
 .otkrica .podnaslov {
-  color: #c9cd8f;
+  color: rgb(201, 205, 143);
   font-size: 40px;
   margin-top: 25px;
 }
-
 .otkrica .opis-pronalaska {
   color: #f8da92;
   font-size: 32px;
@@ -58,7 +55,6 @@ body {
 footer {
   background-color: #f8da92;
 }
-
 footer h6,
 footer a {
   text-decoration: none;
@@ -66,14 +62,13 @@ footer a {
   color: #332f34;
   padding-top: 32px;
 }
-
 footer .kvizz {
   margin-bottom: 32px;
 }
 
 .copy-right p {
   text-align: center;
-  color: #c9cd8f;
+  color: rgb(201, 205, 143);
   font-size: 32px;
   padding: 20px;
 }
@@ -83,16 +78,13 @@ footer .kvizz {
     margin-right: 75px;
   }
 }
-
 @media (max-width: 1421px) {
   .navigacioni-link {
     margin-right: 15px;
   }
 }
-
 @media (max-width: 1061px) {
   .navigacioni-link {
     margin-right: 5px;
   }
-}
-/*# sourceMappingURL=otkrica.css.map */
+}/*# sourceMappingURL=otkrica.css.map */

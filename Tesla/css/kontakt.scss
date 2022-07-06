@@ -120,4 +120,46 @@ footer {
   .navigacioni-link {
     margin-right: 5px;
   }
+  #jedan {
+    h6 {
+      color: map-get($colors, yellowish);
+      font-size: map-get($velicine, velikiNaslov);
+      text-align: center;
+    }
+    .okvir .opis-kluba {
+      border: 3px solid map-get($colors, lightBrowny);
+      width: 90%;
+      margin: 20px auto 60px auto;
+      border-radius: 20px;
+      p {
+        font-size: map-get($velicine, maliNaslov);
+        color: map-get($colors, yellowish);
+        padding: 102px 22px;
+      }
+    }
+  }
+}
+@media (max-width: 531px) {
+  .dva {
+    .pozadina-ikonice {
+      background: linear-gradient(#715c42, #f5c657);
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 20px;
+      .ikonice {
+        font-size: 26px;
+        color: map-get($colors, yellowish) !important;
+        padding: map-get($velicine, maliNaslov);
+      }
+    }
+    p {
+      display: inline-block;
+      color: map-get($colors, yellowish);
+      font-size: 16px;
+      margin-left: 15px;
+    }
+    .paragraf-levo {
+      margin-left: 30px;
+    }
+  }
 }
