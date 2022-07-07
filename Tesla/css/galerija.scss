@@ -35,6 +35,10 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   margin-right: 120px;
+  transition: 0.27s !important;
+}
+.navigacioni-link:hover {
+  border-bottom: 2px solid map-get($colors, greeny);
 }
 // crta
 .crta {
@@ -53,12 +57,20 @@ section.galerija {
 // footer
 footer {
   background-color: map-get($colors, yellowish);
-  h6,
+  h6 {
+    text-decoration: none;
+    font-size: map-get($velicine, maliNaslov);
+    color: map-get($colors, browny);
+    padding-top: map-get($velicine, maliNaslov);
+  }
   a {
     text-decoration: none;
     font-size: map-get($velicine, maliNaslov);
     color: map-get($colors, browny);
     padding-top: map-get($velicine, maliNaslov);
+    &:hover {
+      color: #000;
+    }
   }
   .kvizz {
     margin-bottom: 32px;

@@ -27,6 +27,11 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   margin-right: 120px;
+  transition: 0.27s !important;
+}
+
+.navigacioni-link:hover {
+  border-bottom: 2px solid rgb(201, 205, 143);
 }
 
 .crta {
@@ -45,12 +50,20 @@ section.galerija h1 {
 footer {
   background-color: #f8da92;
 }
-footer h6,
+footer h6 {
+  text-decoration: none;
+  font-size: 32px;
+  color: #332f34;
+  padding-top: 32px;
+}
 footer a {
   text-decoration: none;
   font-size: 32px;
   color: #332f34;
   padding-top: 32px;
+}
+footer a:hover {
+  color: #000;
 }
 footer .kvizz {
   margin-bottom: 32px;
